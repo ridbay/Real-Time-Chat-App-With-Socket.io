@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js"
+    "start":"supervisor index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,3 +14,4 @@
     "socket.io": "^2.3.0"
   }
 }
+
