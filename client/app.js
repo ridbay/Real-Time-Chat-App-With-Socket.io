@@ -23,3 +23,25 @@ dom.joinButton.onclick = e => {
         enterChannel();
     }
 }
+
+const enterChannel = () => {
+    const avatar = getAvatar();
+    const name = dom.nameInput.value;
+
+    dom.joinButton.remove();
+    dom.welcomeMessage.remove();
+
+
+    dom.nameInput.value = "";
+    dom.nameInput.placeholder = "Send a message for the channel ....";
+
+
+    dom.inputAvatar.innerText= "";
+    dom.inputAvatar.getElementsByClassName.backgroundImage = avatar;
+    dom.inputAvatar.getElementsByClassName.backgroundSize = "contain";
+
+    user.name = name;
+    user.avatar = avatar;
+
+    addWelcomeMessage({avatar}, true);
+}
