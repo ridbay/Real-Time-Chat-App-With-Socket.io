@@ -42,6 +42,10 @@ const enterChannel = () => {
   user.avatar = avatar;
 
   addWelcomeMessage({ avatar }, true);
+  socket.emit("user connected", {
+    name,
+    avatar
+  })
 };
 
 const getAvatar = () => {
